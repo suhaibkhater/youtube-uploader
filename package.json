@@ -1,0 +1,19 @@
+{
+  "name": "youtube-uploader",
+  "version": "1.0.0",
+  "description": "A package the uploads media to the youtube",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "yt-uploader",
+    "youtube-uploader",
+    "uploads videos to youtube"
+  ],
+  "author": "Suhaib Khater",
+  "license": "WTFPL",
+  "dependencies": {
+    "googleapis": "^75.0.0"
+  }
+}
