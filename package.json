@@ -1,6 +1,6 @@
 {
   "name": "youtube-uploader-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package the uploads media to the youtube",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,6 @@
   "license": "WTFPL",
   "dependencies": {
     "googleapis": "^75.0.0"
-  }
+  },
+  "repository": "https://github.com/suhaibkhater/youtube-uploader"
 }
