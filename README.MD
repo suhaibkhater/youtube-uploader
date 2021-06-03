@@ -21,7 +21,7 @@ A NodeJS library that uploads videos to youtube account
     const accessToken="put accessToken here"
     const refreshToken="put refreshToken here"
     const media = fs.createReadStream("test.mp4")
-    const REDIRECT_URL="localhost:3000/authorize_channel"
+    const REDIRECT_URL="REDIRECT_URL here"
     const CLIENT_ID="put CLIENT_ID here"
     const CLIENT_SECRET="put CLIENT_SECRET here"
     const title="test"
