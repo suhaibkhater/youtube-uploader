@@ -17,6 +17,30 @@ A NodeJS library that uploads videos to youtube account
 | description    | The Description of the video                                               |
 | privacyStatus  | the value can be either 'public' or 'private' video                        |
 
+# Example
+    const accessToken="put accessToken here"
+    const refreshToken="put refreshToken here"
+    const media = fs.createReadStream("test.mp4")
+    const REDIRECT_URL="localhost:3000/authorize_channel"
+    const CLIENT_ID="put CLIENT_ID here"
+    const CLIENT_SECRET="put CLIENT_SECRET here"
+    const title="test"
+    const description=""
+
+    youtubeUploader(
+        {
+        description,
+        title,
+        accessToken,
+        refreshToken,
+        CLIENT_ID,
+        CLIENT_SECRET,
+        REDIRECT_URL,
+        media,
+        },
+        onSuccess,
+        onError)
+
 
 - For more information on how to get the client secret and id visit the following links:
     - https://developers.google.com/identity/protocols/oauth2
