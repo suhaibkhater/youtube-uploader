@@ -5,7 +5,7 @@
 const { google } = require("googleapis");
 const service = google.youtube("v3");
 
-module.exports.youtubeUploader = (
+module.exports = function youtubeUploader(
   {
     description,
     title,
@@ -19,7 +19,7 @@ module.exports.youtubeUploader = (
   },
   onSuccess,
   onError
-) => {
+) {
   var OAuth2 = google.auth.OAuth2;
   var oauth2Client = new OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL);
   oauth2Client.credentials = {
@@ -36,7 +36,9 @@ module.exports.youtubeUploader = (
     !REDIRECT_URL ||
     !media
   ) {
-    throw new TypeError("One or more of the following params is missing: title, accessToken, refreshToken, CLIENT_SECRET ,CLIENT_ID, REDIRECT_URL, media");
+    throw new TypeError(
+      "One or more of the following params is missing: title, accessToken, refreshToken, CLIENT_SECRET ,CLIENT_ID, REDIRECT_URL, media"
+    );
   }
 
   service.videos.insert(
