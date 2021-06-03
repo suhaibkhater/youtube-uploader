@@ -1,9 +1,11 @@
 # youtube-uploader
-uploads videos to youtube account
+
+
+A NodeJS library that uploads videos to youtube account
 
 - The method accepts a properties param, a success callback, and failure callback. the properties param is an object the can consist of the following:
 
-| Property       | description                                                                |
+| Property       | Description                                                                |
 |----------------|----------------------------------------------------------------------------|
 | CLIENT_ID*     | provided in google cloud console                                           |
 | CLIENT_SECRET* | provided in google cloud console                                           |
@@ -11,8 +13,8 @@ uploads videos to youtube account
 | accessToken*   | from GCP oAuth2                                                            |
 | refreshToken*  | from GCP oAuth2                                                            |
 | title*         | The title of the video                                                     |
-| description    | The Description of the video                                               |
 | media*         | readable Video stream                                                      |
+| description    | The Description of the video                                               |
 | privacyStatus  | the value can be either 'public' or 'private' video                        |
 
 
